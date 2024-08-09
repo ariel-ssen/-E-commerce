@@ -7,7 +7,7 @@ from user.urls import router as user_router
 
 base_api = NinjaAPI(title="Goodpang", version="0.0.0")
 
-base_api.add_router("user", user_router)
+base_api.add_router("users", user_router)
 
 @base_api.get("")
 def health_check_handler(request):
